@@ -1,0 +1,14 @@
+.Switcher {
+  cursor: pointer;
+
+  path {
+    fill: #000;
+    transition: fill 0.3s ease-in-out;
+  }
+
+  &--dark {
+    path {
+      fill: #fff;
+    }
+  }
+}

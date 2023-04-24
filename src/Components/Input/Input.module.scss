@@ -1,0 +1,19 @@
+.Input {
+  min-width: 50px;
+  padding: 16px 15px 14px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  background-color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  line-height: 15px;
+  color: #000;
+  transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out,
+    background-color 0.3s ease-in-out;
+
+  &--dark {
+    background-color: #000;
+    border-color: #fff;
+    color: #fff;
+  }
+}

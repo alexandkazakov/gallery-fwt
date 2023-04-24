@@ -1,0 +1,27 @@
+.gallery {
+  margin-bottom: 40px;
+
+  &__container {
+    // display: grid;
+    // grid-template-columns: repeat(12, 1fr);
+    // gap: 20px;
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  &__paintings {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  .gallery {
+    &__paintings {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+}

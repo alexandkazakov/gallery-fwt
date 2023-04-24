@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.396880f9.css",
+    "main.js": "/static/js/main.798177d2.js",
+    "static/js/787.e5d63ee6.chunk.js": "/static/js/787.e5d63ee6.chunk.js",
+    "static/media/Roboto-Medium.woff": "/static/media/Roboto-Medium.2e8a75432e577e4aa546.woff",
+    "static/media/Roboto-Bold.woff": "/static/media/Roboto-Bold.f706d6ca22893a62d3c8.woff",
+    "static/media/Roboto-Regular.woff": "/static/media/Roboto-Regular.a3cfa1da9af6de7449f2.woff",
+    "static/media/Roboto-Medium.woff2": "/static/media/Roboto-Medium.6ae3b297b84ffbf68045.woff2",
+    "static/media/Roboto-Regular.woff2": "/static/media/Roboto-Regular.5aed06c3c69cd1d41aa5.woff2",
+    "static/media/Roboto-Bold.woff2": "/static/media/Roboto-Bold.bdcd68892caf92ad314f.woff2",
+    "index.html": "/index.html",
+    "static/media/doubleArrowL.svg": "/static/media/doubleArrowL.356d88d77e234d1c61e46edf83e88556.svg",
+    "static/media/doubleArrowR.svg": "/static/media/doubleArrowR.bc468006e53de7fb0ad17631b0415f79.svg",
+    "static/media/arrowL.svg": "/static/media/arrowL.cd23a3815f9e419980d81ff394edaac6.svg",
+    "static/media/arrowR.svg": "/static/media/arrowR.15a2398ae98f5be784df280a707b6d3b.svg",
+    "static/media/selectArrow.svg": "/static/media/selectArrow.e857798522b0dfc8f3430ad40052fcaf.svg",
+    "main.396880f9.css.map": "/static/css/main.396880f9.css.map",
+    "main.798177d2.js.map": "/static/js/main.798177d2.js.map",
+    "787.e5d63ee6.chunk.js.map": "/static/js/787.e5d63ee6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.396880f9.css",
+    "static/js/main.798177d2.js"
+  ]
+}
