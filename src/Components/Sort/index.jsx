@@ -1,15 +1,13 @@
-import Input from "../Input";
-import Select from "../Select";
-import RangeComponent from "../RangeComponent";
+import Input from "../common/Input";
+import Select from "../common/Select";
+import RangeComponent from "../common/RangeComponent";
 import style from "./Sort.module.scss";
 import { useState } from "react";
+import useTheme from "../../hooks/useTheme";
 
-export default function Sort({
-  authorsList,
-  locationsList,
-  isDarkTheme,
-  setAttributes,
-}) {
+export default function Sort({ authorsList, locationsList, setAttributes }) {
+  const { isDarkTheme } = useTheme();
+
   const [dateFrom, setDateFrom] = useState(0);
   const [dateTo, setDateTo] = useState(new Date().getFullYear());
 
@@ -20,6 +18,7 @@ export default function Sort({
     setAttributes(`locationId=${locationId}`);
   }
   function filterByAuthor(name) {
+    if (!authorsList) return;
     const authorId = authorsList.find((author) => author.name === name).id;
     setAttributes(`authorId=${authorId}`);
   }

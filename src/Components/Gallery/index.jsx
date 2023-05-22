@@ -1,5 +1,6 @@
+import useTheme from "../../hooks/useTheme";
 import Card from "../Card";
-import Pagination from "../Pagination";
+import Pagination from "../common/Pagination";
 import style from "./Gallery.module.scss";
 
 export default function Gallery({
@@ -7,10 +8,11 @@ export default function Gallery({
   currentPage,
   setCurrentPage,
   countPages,
-  isDarkTheme,
   authorsList,
   locationsList,
 }) {
+  const { isDarkTheme } = useTheme();
+
   return (
     <div className={style.gallery}>
       <div className={style.gallery__container}>

@@ -1,11 +1,8 @@
 .gallery {
-  margin-bottom: 40px;
+  padding-bottom: 40px;
 
   &__container {
-    // display: grid;
-    // grid-template-columns: repeat(12, 1fr);
-    // gap: 20px;
-    max-width: 1120px;
+    max-width: 1150px;
     margin: 0 auto;
     padding: 0 15px;
   }
@@ -18,8 +15,28 @@
   }
 }
 
+@media (max-width: 1365px) {
+  .gallery {
+    &__container {
+      max-width: 970px;
+    }
+  }
+}
+
+@media (max-width: 1023px) {
+  .gallery {
+    &__container {
+      max-width: 730px;
+    }
+  }
+}
+
 @media (max-width: 767px) {
   .gallery {
+    &__container {
+      max-width: 320px;
+      padding: 0 20px;
+    }
     &__paintings {
       grid-template-columns: repeat(4, 1fr);
     }

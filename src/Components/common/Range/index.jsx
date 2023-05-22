@@ -2,7 +2,7 @@ import { useRef, useState } from "react";
 import cn from "classnames/bind";
 import Arrow from "../Arrow";
 import styles from "./Range.module.scss";
-import useOutsideClick from "../../hooks/useOutsideClick";
+import useOutsideClick from "../../../hooks/useOutsideClick";
 
 const cx = cn.bind(styles);
 

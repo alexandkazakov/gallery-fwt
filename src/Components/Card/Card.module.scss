@@ -1,6 +1,7 @@
 .card {
   grid-column-end: span 4;
   position: relative;
+  width: 360px;
   height: 275px;
   border-radius: 20px;
   cursor: pointer;
@@ -19,7 +20,11 @@
     object-fit: cover;
     border-radius: 20px;
     opacity: 0;
-    transition: opacity 0.3s ease-in-out;
+    transition: opacity 1s ease-in-out;
+  }
+
+  &__imageVisible {
+    opacity: 1;
   }
 
   &__descr {
@@ -59,6 +64,7 @@
 
 @media (max-width: 1365px) {
   .card {
+    width: 300px;
     height: 230px;
   }
 }
@@ -66,6 +72,7 @@
 @media (max-width: 1023px) {
   .card {
     grid-column-end: span 6;
+    width: 340px;
     height: 249px;
   }
 }
@@ -73,6 +80,7 @@
 @media (max-width: 767px) {
   .card {
     grid-column-end: span 4;
+    width: 280px;
     height: 205px;
   }
 }

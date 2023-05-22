@@ -17,7 +17,7 @@ export default function Card({
         src={url}
         alt={name}
         className={style.card__image}
-        onLoad={(event) => (event.target.style.opacity = 1)}
+        onLoad={(event) => event.target.classList.add(style.card__imageVisible)}
         loading="lazy"
       />
       <div className={style.card__descr} id="descr">

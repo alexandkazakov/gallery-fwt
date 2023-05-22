@@ -1,6 +1,6 @@
 import { FC } from "react";
 import cn from "classnames/bind";
-import { ReactComponent as SelectArrow } from "../../images/selectArrow.svg";
+import { ReactComponent as SelectArrow } from "../../../images/selectArrow.svg";
 import styles from "./Arrow.module.scss";
 
 export type TArrow = {

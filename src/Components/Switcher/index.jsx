@@ -1,23 +1,16 @@
+import useTheme from "../../hooks/useTheme";
 import styles from "./Switcher.module.scss";
 import cn from "classnames/bind";
 
 const cx = cn.bind(styles);
 
-export default function Switcher({ isDarkTheme, onChange }) {
-  function changeColor() {
-    if (isDarkTheme) {
-      localStorage.setItem("theme", JSON.stringify(!isDarkTheme));
-      return onChange(!isDarkTheme);
-    } else {
-      localStorage.setItem("theme", JSON.stringify(!isDarkTheme));
-      return onChange(!isDarkTheme);
-    }
-  }
+export default function Switcher() {
+  const { isDarkTheme, changeTheme } = useTheme();
 
   return (
     <svg
       className={cx("Switcher", { "Switcher--dark": isDarkTheme })}
-      onClick={changeColor}
+      onClick={() => changeTheme()}
       width="20"
       height="20"
       viewBox="0 0 20 20"

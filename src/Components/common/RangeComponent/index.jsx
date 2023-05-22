@@ -37,7 +37,7 @@ export default function RangeComponent({
           })}
           placeholder="from"
           onChange={filterFromByCreatedDate}
-          value="from"
+          value={dateFrom}
         />
         <div
           className={cx("separator", {
@@ -50,7 +50,7 @@ export default function RangeComponent({
           })}
           placeholder="before"
           onChange={filterToByCreatedDate}
-          value="before"
+          value={dateTo}
         />
       </Range>
     </>

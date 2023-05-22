@@ -1,11 +1,11 @@
 import cn from "classnames/bind";
 import PaginationPageWithActive from "./PaginationPageWithActive";
 import PaginationPage from "./PaginationPage";
-import { ReactComponent as DoubleArrowL } from "../../images/doubleArrowL.svg";
-import { ReactComponent as ArrowR } from "../../images/arrowR.svg";
-import { ReactComponent as DoubleArrowR } from "../../images/doubleArrowR.svg";
-import { ReactComponent as ArrowL } from "../../images/arrowL.svg";
-import usePaginationSlice from "../../hooks/usePaginationSlice";
+import { ReactComponent as DoubleArrowL } from "../../../images/doubleArrowL.svg";
+import { ReactComponent as ArrowR } from "../../../images/arrowR.svg";
+import { ReactComponent as DoubleArrowR } from "../../../images/doubleArrowR.svg";
+import { ReactComponent as ArrowL } from "../../../images/arrowL.svg";
+import usePaginationSlice from "../../../hooks/usePaginationSlice";
 import styles from "./Pagination.module.scss";
 
 const cx = cn.bind(styles);

@@ -1,7 +1,7 @@
 import { useRef, useState } from "react";
 import SimpleBar from "simplebar-react";
 import cn from "classnames/bind";
-import useOutsideClick from "../../hooks/useOutsideClick";
+import useOutsideClick from "../../../hooks/useOutsideClick";
 import Arrow from "../Arrow";
 import "./SimpleBar.scss";
 import styles from "./Select.module.scss";
@@ -33,7 +33,9 @@ const Select = ({
       onClick={!disabled ? toggleOpen : () => {}}
       aria-hidden="true"
     >
-      {!selectValue && <span className={cx("Select__title")}>Choose an option</span>}
+      {!selectValue && (
+        <span className={cx("Select__title")}>Choose an option</span>
+      )}
       <span className={cx("Select__title")}>{selectValue}</span>
       <Arrow
         isOpen={isOpen}
